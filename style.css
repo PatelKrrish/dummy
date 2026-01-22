@@ -171,3 +171,57 @@ h1, h2 {
         border-radius: 20px;
     }
 }
+/* 📱 AGGRESSIVE MOBILE SCALING */
+@media (max-width: 768px) {
+
+    /* FULL SCREEN INTRO */
+    .intro {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 40px;   /* MUCH bigger */
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 22px;   /* readable CTA */
+        margin-bottom: 24px;
+    }
+
+    .message {
+        font-size: 18px;   /* readable paragraph */
+        line-height: 1.6;
+        margin-top: 18px;
+        padding: 0 16px;
+    }
+
+    /* BIG HEART */
+    .heart {
+        font-size: 220px;  /* dominant */
+        margin: 24px 0;
+    }
+
+    /* ALBUM */
+    .album h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .album {
+        padding: 10px;
+    }
+
+    /* PHOTO SHOULD DOMINATE SCREEN */
+    .photo-stack {
+        width: 96vw;     /* almost full width */
+        height: 85vh;    /* almost full height */
+        margin: 10px auto;
+    }
+
+    .photo-stack img {
+        border-radius: 22px;
+    }
+}
+
