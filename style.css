@@ -123,3 +123,51 @@ h1, h2 {
     }
 }
 
+/* 📱 MOBILE FIXES — TEXT + LAYOUT */
+@media (max-width: 768px) {
+
+    /* INTRO TEXT */
+    h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .message {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 14px;
+        padding: 0 20px;
+    }
+
+    /* BIG HEART ON MOBILE */
+    .heart {
+        font-size: 180px; /* visually strong */
+        margin: 20px 0;
+    }
+
+    /* ALBUM SECTION */
+    .album h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .album {
+        padding: 16px;
+    }
+
+    /* PHOTO STACK — IMMERSIVE */
+    .photo-stack {
+        width: 92vw;
+        height: 78vh;
+        margin: 16px auto;
+    }
+
+    .photo-stack img {
+        border-radius: 20px;
+    }
+}
