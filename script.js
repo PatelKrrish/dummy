@@ -12,10 +12,11 @@ function celebrate() {
     setTimeout(() => clearInterval(heartInterval), 2000);
 
     setTimeout(() => {
-        document.getElementById("intro").style.display = "none";
-        document.getElementById("album").style.display = "block";
-        startPhotoStack();
-    }, 1200);
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("album").style.display = "block";
+    startPhotoStack();
+    showAmbientHearts(); // 💖 NEW
+}, 1200);
 }
 
 /* 💖 HEART EFFECT LOGIC */
@@ -69,4 +70,21 @@ function startPhotoStack() {
         layout();
     }, 2000);
 
+}
+
+function showAmbientHearts() {
+    const container = document.getElementById("heart-effects");
+
+    for (let i = 0; i < 6; i++) {
+        const h = document.createElement("div");
+        h.className = "ambient-heart";
+        h.innerHTML = "❤️";
+
+        // place on sides
+        h.style.left = i % 2 === 0 ? "5%" : "85%";
+        h.style.top = random(10, 80) + "%";
+        h.style.animationDelay = random(0, 3) + "s";
+
+        container.appendChild(h);
+    }
 }
