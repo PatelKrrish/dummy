@@ -36,7 +36,7 @@ function burstHearts() {
         h.style.top =
             rect.top + rect.height / 2 + random(-10, 10) + "px";
 
-        h.style.fontSize = random(28, 42) + "px";
+        h.style.animationDuration = random(3.5, 5) + "s";
         h.style.animationDuration = random(1.4, 2.2) + "s";
 
         container.appendChild(h);
@@ -68,4 +68,5 @@ function startPhotoStack() {
         stack.appendChild(stack.firstElementChild);
         layout();
     }, 2000);
+
 }
