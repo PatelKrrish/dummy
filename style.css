@@ -105,3 +105,21 @@ h1, h2 {
     100% { transform: translateY(0) scale(1); }
 }
 
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+    .photo-stack {
+        width: 90vw;        /* almost full screen width */
+        height: 75vh;       /* tall, immersive */
+        margin: 20px auto;
+    }
+
+    .photo-stack img {
+        border-radius: 18px;
+    }
+
+    .album {
+        padding: 16px;
+    }
+}
+
