@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Señorita 🎂</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEART EFFECT LAYER -->
+<div id="heart-effects"></div>
+
+<!-- INTRO SECTION -->
+<div class="intro" id="intro">
+    <h1>🎂 Happy Birthday 🎂</h1>
+    <h2>Click the heart, Señorita ❤️</h2>
+
+    <div class="heart" onclick="celebrate()">❤️</div>
+
+    <div class="message" id="wish">
+        🎉 Happy Birthday to you, Señorita 🎉<br>
+        💖 May your life be full of love & happiness 💖
+    </div>
+</div>
+
+<!-- ALBUM SECTION -->
+<div class="album" id="album">
+    <h2>📸 Our Beautiful Memories</h2>
+
+    <div class="photo-stack" id="photoStack">
+        <img src="assets/img1.jpeg">
+        <img src="assets/img2.jpeg">
+        <img src="assets/img3.jpeg">
+        <img src="assets/img4.jpeg">
+        <img src="assets/img5.jpeg">
+    </div>
+</div>
+
+<!-- IMAGE POPUP -->
+<div class="popup" id="popup">
+    <span onclick="closeImg()">✖</span>
+    <img id="popupImg">
+</div>
+
+<!-- AUDIO -->
+<audio id="song" preload="auto">
+    <source src="assets/happybirthday.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
