@@ -61,24 +61,47 @@ h1, h2 {
 .floating-heart {
     position: absolute;
     animation-name: floatUp;
-    animation-timing-function: cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.15, 0.7, 0.25, 1);
     animation-fill-mode: forwards;
     opacity: 1;
 
-    /* 💗 darker, richer pink-red */
-    color: #b1124a; /* deep rose crimson */
+    /* ❤️ deep romantic crimson */
+    color: #8b103e;
 
-    /* 💖 stronger depth */
-    filter: drop-shadow(0 10px 20px rgba(177, 18, 74, 0.55));
+    /* depth + richness */
+    filter:
+      drop-shadow(0 12px 25px rgba(139, 16, 62, 0.65))
+      drop-shadow(0 0 20px rgba(255, 70, 120, 0.35));
 }
 
 @keyframes floatUp {
     0% {
-        transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1.1);
         opacity: 1;
     }
+    70% {
+        opacity: 0.95;
+    }
     100% {
-        transform: translateY(-180px) scale(2.2);
-        opacity: 0;
+        transform: translateY(-260px) scale(2.8);
+        opacity: 0.6; /* 👈 NOT fully gone */
     }
 }
+
+/* AMBIENT HEARTS FOR PHOTOS */
+.ambient-heart {
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.25;
+    color: #7a0c35;
+    animation: ambientFloat 6s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes ambientFloat {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-30px) scale(1.1); }
+    100% { transform: translateY(0) scale(1); }
+}
+
